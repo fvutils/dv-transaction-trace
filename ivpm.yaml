@@ -1,0 +1,45 @@
+
+package:
+  name: dv-transaction-trace
+
+  dep-sets:
+  - name: default-dev
+    deps: 
+    - name: dv-flow-mgr
+      url: https://github.com/dv-flow/dv-flow-mgr.git
+    - name: pytest-dfm
+      url: https://github.com/dv-flow/pytest-dfm.git
+    - name: protobuf
+      version: v33.2
+      url: https://github.com/protocolbuffers/protobuf
+      src: gh-rls
+      cache: true
+    - name: protobuf-src
+      version: v33.2
+      url: https://github.com/protocolbuffers/protobuf
+      src: gh-rls
+      cache: true
+      source: true
+    - name: sphinx
+      src: pypi
+    - name: perfetto-src
+      url: https://github.com/google/perfetto
+      version: v53.0
+      source: true
+      src: gh-rls
+      cache: true
+    - name: perfetto
+      url: https://github.com/google/perfetto
+      version: v53.0
+      src: gh-rls
+      cache: true
+    - name: uvm
+      cache: true
+      url: https://www.accellera.org/images/downloads/standards/uvm/uvm-1.2.tar.gz
+    - name: verilator-bin
+      url: https://github.com/edapack/verilator-bin
+      src: gh-rls
+    - name: pytest
+      src: pypi
+
+
